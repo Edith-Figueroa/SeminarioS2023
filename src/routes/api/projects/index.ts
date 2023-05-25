@@ -3,9 +3,9 @@ const router = express.Router();
 
 import {createProject, getProjects} from '@libs/projects/projects';
 
-/*router.get('/', (_req, res) => {
+router.get('/', (_req, res) => {
     res.json({version:1, scope:'projects'});
-});*/
+});
 
 router.get('/echo/:msg', (req, res) => {
      const { msg } = req.params;
